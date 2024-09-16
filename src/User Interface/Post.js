@@ -1,7 +1,15 @@
 import React from 'react';
 
-export default function Post() {
+export function PostComments() {
     return (
-        <div></ div>
+        <div></div>
+    );
+}
+
+export default function Post() {
+    const [commentsHidden, setCommentsHidden] = useState(true);
+
+    return (
+        <div></div>
     );
 };
