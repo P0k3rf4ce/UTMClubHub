@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     padding: 10px; /* Reduced padding */
+    /* Lock scrollability */
+    overflow-y: hidden; 
+    overflow-x: hidden;
   }
   
   .nav-list {
