@@ -3,7 +3,7 @@ import React from 'react';
 import { FaHome, FaCompass, FaCalendarAlt, FaSearch } from 'react-icons/fa';
 import './Navbar.css'; // Import the CSS file for styling
 
-const Navbar = () => {
+export default function Navbar(){
   return (
     <div className="sidebar">
       <ul className="nav-list">
@@ -27,6 +27,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;
-

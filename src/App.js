@@ -2,12 +2,10 @@ import { useState } from "react";
 import Navbar from "./User Interface/Navbar";
 
 
-function App() {
+export default function App() {
   return (
     <div>
       <Navbar />
     </div>
   );
 }
-
-export default App;
