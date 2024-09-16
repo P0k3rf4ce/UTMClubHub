@@ -9,3 +9,8 @@ root.render(
     <App />
   </StrictMode>
 );
+
+// Loader for website
+window.onload = function() {
+  document.getElementById("loader").style.display = "none";
+};
