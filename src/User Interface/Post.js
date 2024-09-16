@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 
 export function PostComments() {
     return (
@@ -10,6 +11,6 @@ export default function Post() {
     const [commentsHidden, setCommentsHidden] = useState(true);
 
     return (
-        <div></div>
+        <div>Posts</div>
     );
 };
