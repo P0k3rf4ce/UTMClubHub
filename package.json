@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
+    "html-react-parser": "^5.1.16",
     "postcss": "^8.4.47",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

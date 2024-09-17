@@ -1,4 +1,5 @@
 import React from 'react';
+import parse from 'html-react-parser';
 import { useState } from "react";
 
 export function PostComments() {
@@ -13,7 +14,7 @@ const Post =  ({post_data}) => {
     return (
         <div>
             <h1>{post_data.username}, {post_data.handle}</h1>
-            <p>{post_data.content}</p>
+            <p>{parse(post_data.content)}</p>
         </div>
     );
 };
