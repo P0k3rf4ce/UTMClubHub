@@ -58,6 +58,26 @@
       "retweets": 45,
       "replies": 33,
       "timestamp": "2024-09-13T18:45:00Z"
+    },
+    {
+      "id": 7,
+      "username": "movie_buff",
+      "handle": "@cinemaaddict",
+      "content": "Just watched the new sci-fi thriller and it blew my mind 🤯 Such an intense movie! Highly recommend! 🎬 #MovieNight #SciFi",
+      "likes": 198,
+      "retweets": 45,
+      "replies": 33,
+      "timestamp": "2024-09-13T18:45:00Z"
+    },
+    {
+      "id": 8,
+      "username": "movie_buff",
+      "handle": "@cinemaaddict",
+      "content": "Just watched the new sci-fi thriller and it blew my mind 🤯 Such an intense movie! Highly recommend! 🎬 #MovieNight #SciFi",
+      "likes": 198,
+      "retweets": 45,
+      "replies": 33,
+      "timestamp": "2024-09-13T18:45:00Z"
     }
   ]
   

@@ -1,6 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser';
 import { useState } from "react";
+import './Post.css';
 
 export function PostComments() {
     return (
@@ -12,7 +13,7 @@ const Post =  ({post_data}) => {
     const [commentsHidden, setCommentsHidden] = useState(true);
 
     return (
-        <div>
+        <div className="post-box">
             <h1>{post_data.username}, {post_data.handle}</h1>
             <p>{parse(post_data.content)}</p>
         </div>

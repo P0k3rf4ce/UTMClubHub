@@ -4,6 +4,7 @@
 
 body {
   font-family: sans-serif;
+  vertical-align: top;
   margin: 20px;
   padding: 0;
 }
@@ -50,13 +51,19 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
 .row {
+  overflow: hidden;
   display: flex; /* This arranges child elements in a row */
   gap: 20px; /* Optional: Adds space between elements */
 }
+
+.post-section {
+    overflow-y: scroll; 
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 0;            /* Aligns the element to the top */
+    left: 10%;           /* Optional: Aligns the element to the left */
+    /*right: 10%;          /* Optional: Aligns the element to the right */
+    width: 80%;       /* Makes the element take the full width */
+  }

@@ -40,3 +40,17 @@ body {
 .icon-button:hover {
     color: #007bff;
 }
+
+.post-box {
+    /*width: 50vw;*/
+    border: 2px solid #333;    /* Creates a solid border */
+    padding: 20px;             /* Adds space inside the box */
+    margin: 10px;              /* Adds space outside the box */
+    background-color: #f9f9f9; /* Optional: Light background color */
+    border-radius: 10px;       /* Optional: Rounded corners */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+.post-username {
+    font-weight: bold;
+}
