@@ -51,6 +51,15 @@ body {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
 }
 
+.post-user-handle-row {
+    display: flex; /* This arranges child elements in a row */
+}
+
 .post-username {
     font-weight: bold;
 }
+
+.post-handle {
+    color: gray;
+}
+
