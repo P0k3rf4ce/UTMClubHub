@@ -7,10 +7,15 @@ export function PostComments() {
     );
 }
 
-export default function Post() {
+const Post =  ({post_data}) => {
     const [commentsHidden, setCommentsHidden] = useState(true);
 
     return (
-        <div>Posts</div>
+        <div>
+            <h1>{post_data.username}, {post_data.handle}</h1>
+            <p>{post_data.content}</p>
+        </div>
     );
 };
+
+export default Post;
