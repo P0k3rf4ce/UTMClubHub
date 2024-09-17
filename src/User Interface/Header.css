@@ -1,0 +1,27 @@
+/* Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #444;
+    padding: 10px 20px;
+    width: 100%;
+    height: 10%; /* This will cover 10% of the screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1001; /* Make sure header stays above the sidebar */
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.site-name {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
