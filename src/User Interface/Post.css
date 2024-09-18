@@ -24,11 +24,12 @@ body {
 }
 
 .button-row {
-    display: flex;
-    gap: 10px; /* Space between buttons */
+    display: fixed;
+    /* Note to self, gap property does nothing here, you need to manually seperate them though the icon-button margins*/
 }
 
 .icon-button {
+    margin-right: 2%;
     background: none;
     border: none;
     font-size: 24px;
@@ -37,9 +38,41 @@ body {
     transition: color 0.3s;
 }
 
-.icon-button:hover {
+.button-container {
+    position: relative; /* Tooltip is positioned relative to the button */
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 1%;
+  }
+
+.tooltip {
+    visibility: hidden; /* Tooltip is hidden by default */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    
+    position: absolute;
+    bottom: -100%; /* Position the tooltip above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    white-space: nowrap;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s; /* Fade-in effect */
+  }
+
+  .icon-button:hover {
     color: #007bff;
 }
+
+.button-container:hover .tooltip {
+    visibility: visible; /* Show the tooltip when hovering over the button */
+    opacity: 1;
+  }
 
 .post-box {
     /*width: 50vw;*/
