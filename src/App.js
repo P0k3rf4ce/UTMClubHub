@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Navbar from "./User Interface/Navbar.js";
-import "./User Interface/Post.js";
-import "./User Interface/Post.css";
+import Post from "./User Interface/Post.js";
 import postData from './User Interface/test/fake_posts.json';
 
 
