@@ -16,7 +16,7 @@ function Icon(icon_name, undertext) {
 
 const Post =  ({post_data}) => {
     const [commentsHidden, setCommentsHidden] = useState(true);
-
+    
     return (
         
         <div className="post-box">
@@ -35,7 +35,7 @@ const Post =  ({post_data}) => {
                 <span class="tooltip">Comment on this post</span>
                 </div>
                 <div className='button-container'>
-                <FaPaperPlane className='icon-button' />
+                <FaPaperPlane className='icon-button'/>
                 <span class="tooltip">Share this post</span>
                 </div>
                 </div>
