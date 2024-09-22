@@ -1,5 +1,5 @@
 # UTMCLUBHUB Project Description
-    The University of Toronto Mississauga (UTM) is home to a diverse range of clubs and
+The University of Toronto Mississauga (UTM) is home to a diverse range of clubs and
 student organizations that form the backbone of campus life. However, with so many events and
 activities happening simultaneously, it is impossible for students to stay informed and engaged.
 To bridge this gap, we propose the development of a dedicated mobile application that serves
