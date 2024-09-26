@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1655a55cebd2864d71bcdfd28a93f7a",
+    "revision": "588c59bf971b3b9b588bb9a294a2311c",
     "url": "/UTMClubHub/index.html"
   },
   {

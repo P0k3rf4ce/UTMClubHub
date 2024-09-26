@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/UTMClubHub/precache-manifest.e9e76a4d7353589b986f72a8d3bacb82.js"
+  "/UTMClubHub/precache-manifest.12aba6fdee78be04738c653e4838273a.js"
 );
 
 self.addEventListener('message', (event) => {
