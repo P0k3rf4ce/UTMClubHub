@@ -1,10 +1,10 @@
 // Navbar.js
 import React from 'react';
-import { FaHome, FaCompass, FaCalendarAlt, FaSearch, FaUser } from 'react-icons/fa';
-import './Navbar.css'; // Import the CSS file for styling
+import { FaHome, FaCompass, FaCalendarAlt, FaSearch, FaUser, FaEye } from 'react-icons/fa'; // Add FaEye icon for the toggle
+import './Navbar.css'; 
 import { FaGear } from 'react-icons/fa6';
 
-export default function Navbar(){
+export default function Navbar({ togglePosts }) {
   return (
     <div className="sidebar">
       <ul className="nav-list">
@@ -19,6 +19,10 @@ export default function Navbar(){
         <li className="nav-item">
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
+        </li>
+        <li className="nav-item toggle-button" onClick={togglePosts}>
+          <FaEye className="nav-icon" /> {/* Eye icon to represent show/hide */}
+          <span className="nav-text">Toggle Posts</span>
         </li>
         <li className="nav-divider-item">
           <FaSearch className="nav-icon" />
@@ -35,4 +39,4 @@ export default function Navbar(){
       </ul>
     </div>
   );
-};
+}
