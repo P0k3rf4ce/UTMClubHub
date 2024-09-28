@@ -4,11 +4,11 @@ import { FaHome, FaCompass, FaCalendarAlt, FaSearch, FaUser, FaEye } from 'react
 import './Navbar.css'; 
 import { FaGear } from 'react-icons/fa6';
 
-export default function Navbar({ togglePosts }) {
+export default function Navbar({post2search, search2post}) {
   return (
     <div className="sidebar">
       <ul className="nav-list">
-        <li className="nav-item">
+        <li className="nav-item" onClick={search2post}>
           <FaHome className="nav-icon" />
           <span className="nav-text">Home</span>
         </li>
@@ -20,11 +20,7 @@ export default function Navbar({ togglePosts }) {
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
         </li>
-        <li className="nav-item toggle-button" onClick={togglePosts}>
-          <FaEye className="nav-icon" /> {/* Eye icon to represent show/hide */}
-          <span className="nav-text">Toggle Posts</span>
-        </li>
-        <li className="nav-divider-item">
+        <li className="nav-divider-item" onClick={post2search}>
           <FaSearch className="nav-icon" />
           <span className="nav-text">Search</span>
         </li>
