@@ -1,0 +1,15 @@
+
+.image-container {
+    display: flex;                /* Center the image */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    height: 100vh;                /* Full height of the viewport */
+  }
+  
+  .image {
+    max-width: 100%;             /* Responsive width */
+    height: auto;                /* Maintain aspect ratio */
+    border: 2px solid #333;      /* Optional border */
+    border-radius: 8px;          /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
