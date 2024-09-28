@@ -1,0 +1,98 @@
+/* IconButtons.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.outer-box {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inner-box {
+    margin-bottom: 20px; /* Space between inner-box and buttons */
+}
+
+.button-row {
+    display: fixed;
+    /* Note to self, gap property does nothing here, you need to manually seperate them though the icon-button margins*/
+}
+
+.icon-button {
+    margin-right: 2%;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.button-container {
+    position: relative; /* Tooltip is positioned relative to the button */
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 1%;
+  }
+
+.tooltip {
+    visibility: hidden; /* Tooltip is hidden by default */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    
+    position: absolute;
+    bottom: -100%; /* Position the tooltip above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    white-space: nowrap;
+    
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s; /* Fade-in effect */
+  }
+
+  .icon-button:hover {
+    color: #007bff;
+}
+
+.button-container:hover .tooltip {
+    visibility: visible; /* Show the tooltip when hovering over the button */
+    opacity: 1;
+  }
+
+.post-box {
+    /*width: 50vw;*/
+    border: 2px solid #333;    /* Creates a solid border */
+    padding: 20px;             /* Adds space inside the box */
+    margin: 10px;              /* Adds space outside the box */
+    background-color: #f9f9f9; /* Optional: Light background color */
+    border-radius: 10px;       /* Optional: Rounded corners */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+.post-user-handle-row {
+    display: flex; /* This arranges child elements in a row */
+}
+
+.post-username {
+    font-weight: bold;
+}
+
+.post-handle {
+    color: gray;
+}
+
