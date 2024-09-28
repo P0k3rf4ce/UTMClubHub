@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "username": "tech_guru",
+      "handle": "@techguru123",
+      "content": "Just got my hands on the new #iPhone15! Loving the sleek design and improved camera performance. 📱🔥 #TechNews #AppleEvent",
+      "likes": 145,
+      "retweets": 30,
+      "replies": 12,
+      "timestamp": "2024-09-15T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "username": "fitness_fanatic",
+      "handle": "@fitfan22",
+      "content": "Morning run completed! 5 miles in the books 🏃‍♂️💪 #FitnessGoals #HealthyLifestyle",
+      "likes": 89,
+      "retweets": 15,
+      "replies": 8,
+      "timestamp": "2024-09-15T06:45:00Z"
+    },
+    {
+      "id": 3,
+      "username": "foodie_heaven",
+      "handle": "@foodieheaven",
+      "content": "Tried the new sushi spot in town and WOW! 🍣 Highly recommend the dragon roll. 😋 #FoodieLife #SushiLovers",
+      "likes": 215,
+      "retweets": 42,
+      "replies": 18,
+      "timestamp": "2024-09-14T19:12:00Z"
+    },
+    {
+      "id": 4,
+      "username": "travel_with_me",
+      "handle": "@wanderlust_way",
+      "content": "Exploring the streets of Tokyo 🗼 This city is incredible! So much to see, do, and eat! 🍜 #TokyoAdventures #TravelGoals",
+      "likes": 320,
+      "retweets": 65,
+      "replies": 24,
+      "timestamp": "2024-09-13T11:22:00Z"
+    },
+    {
+      "id": 5,
+      "username": "code_master",
+      "handle": "@codewiz",
+      "content": "Finally solved that pesky bug after hours of debugging 🐞 #DevLife #100DaysOfCode #CodingIsFun",
+      "likes": 143,
+      "retweets": 23,
+      "replies": 6,
+      "timestamp": "2024-09-14T21:08:00Z"
+    },
+    {
+      "id": 6,
+      "username": "movie_buff",
+      "handle": "@cinemaaddict",
+      "content": "Just watched the new sci-fi thriller and it blew my mind 🤯 Such an intense movie! Highly recommend! 🎬 #MovieNight #SciFi",
+      "likes": 198,
+      "retweets": 45,
+      "replies": 33,
+      "timestamp": "2024-09-13T18:45:00Z"
+    },
+    {
+      "id": 7,
+      "username": "movie_buff",
+      "handle": "@cinemaaddict",
+      "content": "Just watched the new sci-fi thriller and it blew my mind 🤯 Such an intense movie! Highly recommend! 🎬 #MovieNight #SciFi",
+      "likes": 198,
+      "retweets": 45,
+      "replies": 33,
+      "timestamp": "2024-09-13T18:45:00Z"
+    },
+    {
+      "id": 8,
+      "username": "movie_buff",
+      "handle": "@cinemaaddict",
+      "content": "Just watched the new sci-fi thriller and it blew my mind 🤯 Such an intense movie! Highly recommend! 🎬 #MovieNight #SciFi",
+      "likes": 198,
+      "retweets": 45,
+      "replies": 33,
+      "timestamp": "2024-09-13T18:45:00Z"
+    }
+  ]
+  
