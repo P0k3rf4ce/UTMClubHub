@@ -6,7 +6,7 @@ import Search from "./User Interface/Search";
 
 // New imports
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Page1 from "./User Interface/Page1";
+import Home from "./User Interface/Home";
 import Page2 from "./User Interface/Page2";
 
 export default function App() {
@@ -48,7 +48,7 @@ export default function App() {
   return(
     <HashRouter>
       <Routes>
-        <Route path='/' element={<Page1></Page1>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/Page2' element={<Page2></Page2>}></Route>
       </Routes>
     </HashRouter>

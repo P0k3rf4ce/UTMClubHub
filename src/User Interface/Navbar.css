@@ -88,3 +88,24 @@
 .toggle-button:hover {
   background-color: #444; /* Slight background change on hover */
 }
+
+
+a:link {
+  text-decoration: none;
+  color:aliceblue;
+}
+
+a:visited {
+  text-decoration: none;
+  color:aliceblue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:aliceblue;
+}
+
+a:active {
+  text-decoration: underline;
+  text-decoration: aliceblue;
+}

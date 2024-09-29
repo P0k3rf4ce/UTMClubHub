@@ -1,0 +1,21 @@
+.mainheader{
+    margin-top: 3%;
+    color: black;
+    font-size: 300%;
+}
+
+.mainsection{
+    margin-top: 5%;
+    margin-left: 3%;
+    position: relative;
+}
+
+.quickstart{
+    margin-top: 0%;
+    color: darkgreen;
+    font-size: 200%;
+}
+
+.subquick{
+    margin-top: 0%;
+}

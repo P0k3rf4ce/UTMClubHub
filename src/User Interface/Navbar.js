@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div className="sidebar">
       <ul className="nav-list">
-        <Link to="/">
+        <Link className="a"to="/">
         <li className="nav-item">
           <FaHome className="nav-icon" />
           <span className="nav-text">Home</span>
@@ -25,7 +25,7 @@ export default function Navbar() {
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
         </li>
-        <Link to="/Page2">
+        <Link className="a" to="/Page2">
         <li className="nav-divider-item">
           <FaSearch className="nav-icon" />
           <span className="nav-text">Search</span>
