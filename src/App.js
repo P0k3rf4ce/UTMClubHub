@@ -4,11 +4,16 @@ import Post from "./User Interface/Post";
 import postData from './User Interface/test/fake_posts.json';
 import Search from "./User Interface/Search";
 
+// New imports
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Page1 from "./User Interface/Page1";
+import Page2 from "./User Interface/Page2";
+
 export default function App() {
   // Use the correct syntax for declaring and using state
   const [isPostVisible, setIsPostVisible] = useState(true);
   const [isSearchVisible, setIsSearchVisible] = useState(false); // Initially, posts are shown, search is hidden
-
+  /*
   // Function to hide posts and show search
   const post2search = () => {
     setIsPostVisible(false);
@@ -28,14 +33,24 @@ export default function App() {
       </div>
       <div className="row">
         <div className="post-section">
-          {/* Conditional rendering of posts */}
           {isPostVisible && postData.map((post) => (<Post key={post.id} post_data={post} />))}
         </div>
       </div>
       <div>
-        {/* Conditional rendering of search */}
+
         {isSearchVisible && <Search />}
       </div>
     </div>
   );
+  */
+  // Previous version of App ^
+
+  return(
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Page1></Page1>}></Route>
+        <Route path='/Page2' element={<Page2></Page2>}></Route>
+      </Routes>
+    </HashRouter>
+  )
 }

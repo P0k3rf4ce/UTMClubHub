@@ -4,14 +4,19 @@ import { FaHome, FaCompass, FaCalendarAlt, FaSearch, FaUser, FaEye } from 'react
 import './Navbar.css'; 
 import { FaGear } from 'react-icons/fa6';
 
-export default function Navbar({post2search, search2post}) {
+// New import
+import { Link } from 'react-router-dom';
+
+export default function Navbar() {
   return (
     <div className="sidebar">
       <ul className="nav-list">
-        <li className="nav-item" onClick={search2post}>
+        <Link to="/">
+        <li className="nav-item">
           <FaHome className="nav-icon" />
           <span className="nav-text">Home</span>
         </li>
+        </Link>
         <li className="nav-item">
           <FaCompass className="nav-icon" />
           <span className="nav-text">Explore</span>
@@ -20,10 +25,12 @@ export default function Navbar({post2search, search2post}) {
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
         </li>
-        <li className="nav-divider-item" onClick={post2search}>
+        <Link to="/Page2">
+        <li className="nav-divider-item">
           <FaSearch className="nav-icon" />
           <span className="nav-text">Search</span>
         </li>
+        </Link>
         <li className="nav-user-item">
           <FaGear className="nav-icon" />
           <span className="nav-text">Settings</span>
