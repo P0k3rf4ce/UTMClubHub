@@ -19,19 +19,21 @@ export default function Search(){
         };
     
     return(
+    <div className="container">
     <form onSubmit={handleSubmit}>
         <div className='searchbox'>
-        <div>
-            <label htmlFor="textInput">What are you looking for?</label>
-            <input
+            <label className="item yap" htmlFor="textInput">What are you looking for?</label>
+            <input className="inputbox item"
             id="textInput"
             type="text"
             value={inputValue}
             onChange={handleChange}
             />
-        </div>
-    <button type="submit">Submit</button>
+            <button type="submit">Search</button>
     </div>
-    </form>)
+    </form>
+    <p>Tips: Try to search using keywords such as activity name, time, location, event holder etc.</p>
+    </div>
+    )
           
 }

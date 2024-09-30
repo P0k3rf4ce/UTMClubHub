@@ -25,7 +25,7 @@ export default function Navbar() {
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
         </li>
-        <Link className="a" to="/Page2">
+        <Link className="a" to="/Search">
         <li className="nav-divider-item">
           <FaSearch className="nav-icon" />
           <span className="nav-text">Search</span>

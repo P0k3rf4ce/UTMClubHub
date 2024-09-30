@@ -7,7 +7,7 @@ import Search from "./User Interface/Search";
 // New imports
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./User Interface/Home";
-import Page2 from "./User Interface/Page2";
+import SearchPage from "./User Interface/SearchPage";
 
 export default function App() {
   // Use the correct syntax for declaring and using state
@@ -49,7 +49,7 @@ export default function App() {
     <HashRouter>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/Page2' element={<Page2></Page2>}></Route>
+        <Route path='/Search' element={<SearchPage></SearchPage>}></Route>
       </Routes>
     </HashRouter>
   )
