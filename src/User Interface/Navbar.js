@@ -23,10 +23,12 @@ export default function Navbar() {
           <span className="nav-text">Explore</span>
         </li>
         </Link>
+        <Link className='a'to='/Calendar'>
         <li className="nav-item">
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
         </li>
+        </Link>
         <Link className="a" to="/Search">
         <li className="nav-divider-item">
           <FaSearch className="nav-icon" />

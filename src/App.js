@@ -9,6 +9,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./User Interface/Home";
 import SearchPage from "./User Interface/SearchPage";
 import Explore from "./User Interface/Explore"
+import CalendarPage from "./User Interface/CalendarPage";
 
 export default function App() {
   // Use the correct syntax for declaring and using state
@@ -52,6 +53,7 @@ export default function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/Search' element={<SearchPage></SearchPage>}></Route>
         <Route path='/Explore' element={<Explore></Explore>}></Route>
+        <Route path="/Calendar" element={<CalendarPage></CalendarPage>}></Route>
       </Routes>
     </HashRouter>
   )
