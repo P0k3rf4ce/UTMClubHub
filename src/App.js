@@ -8,11 +8,12 @@ import Search from "./User Interface/Search";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./User Interface/Home";
 import SearchPage from "./User Interface/SearchPage";
+import Explore from "./User Interface/Explore"
 
 export default function App() {
   // Use the correct syntax for declaring and using state
-  const [isPostVisible, setIsPostVisible] = useState(true);
-  const [isSearchVisible, setIsSearchVisible] = useState(false); // Initially, posts are shown, search is hidden
+  // const [isPostVisible, setIsPostVisible] = useState(true);
+  // const [isSearchVisible, setIsSearchVisible] = useState(false); // Initially, posts are shown, search is hidden
   /*
   // Function to hide posts and show search
   const post2search = () => {
@@ -50,6 +51,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/Search' element={<SearchPage></SearchPage>}></Route>
+        <Route path='/Explore' element={<Explore></Explore>}></Route>
       </Routes>
     </HashRouter>
   )

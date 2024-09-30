@@ -17,10 +17,12 @@ export default function Navbar() {
           <span className="nav-text">Home</span>
         </li>
         </Link>
+        <Link className='a'to='/Explore'>
         <li className="nav-item">
           <FaCompass className="nav-icon" />
           <span className="nav-text">Explore</span>
         </li>
+        </Link>
         <li className="nav-item">
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>

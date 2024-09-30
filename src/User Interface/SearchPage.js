@@ -2,6 +2,7 @@ import react from "react";
 import Navbar from "./Navbar";
 import Post from "./Post";
 import Search from "./Search";
+import './SearchPage.css'
 
 export default function SearchPage(){
     return(
@@ -9,7 +10,7 @@ export default function SearchPage(){
             <div>
                 <Navbar/>
             </div>
-            <div>
+            <div className="bdef">
                 <Search/>
             </div>
         </div>
