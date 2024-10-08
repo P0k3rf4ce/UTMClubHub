@@ -16,6 +16,7 @@ public class Post {
     int likes;
     int commentCount;
 
+    boolean postVisible;
     boolean commentsVisible;
     boolean restrictComments;
     boolean userliked; // MAKE IT A SET OF USER ID's WHO LIKED IT SO WE CAN BE SPEEDY
@@ -37,6 +38,7 @@ public class Post {
         this.commentCount = 0;
         this.commentsVisible = false;
         this.restrictComments = false;
+        this.postVisible = false;
     }
 
     public void likePost(){
