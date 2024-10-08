@@ -1,0 +1,39 @@
+.searchbox{
+  flex-direction: row;
+  position: relative;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  overflow-y: fixed;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.container{
+  margin-top: -95%;
+  margin-left: -120%;
+}
+
+.item{
+  margin-right: 0.5%;
+}
+
+.yap{
+  font-size: 24px;
+}
+
+.inputbox{
+  width: 70%;
+  flex-grow: 0;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+}
+
+p{
+  margin-left: 32%;
+}

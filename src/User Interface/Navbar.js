@@ -1,29 +1,40 @@
 // Navbar.js
 import React from 'react';
-import { FaHome, FaCompass, FaCalendarAlt, FaSearch, FaUser } from 'react-icons/fa';
-import './Navbar.css'; // Import the CSS file for styling
+import { FaHome, FaCompass, FaCalendarAlt, FaSearch, FaUser, FaEye } from 'react-icons/fa'; // Add FaEye icon for the toggle
+import './Navbar.css'; 
 import { FaGear } from 'react-icons/fa6';
 
-export default function Navbar(){
+// New import
+import { Link } from 'react-router-dom';
+
+export default function Navbar() {
   return (
     <div className="sidebar">
       <ul className="nav-list">
+        <Link className="a"to="/">
         <li className="nav-item">
           <FaHome className="nav-icon" />
           <span className="nav-text">Home</span>
         </li>
+        </Link>
+        <Link className='a'to='/Explore'>
         <li className="nav-item">
           <FaCompass className="nav-icon" />
           <span className="nav-text">Explore</span>
         </li>
+        </Link>
+        <Link className='a'to='/Calendar'>
         <li className="nav-item">
           <FaCalendarAlt className="nav-icon" />
           <span className="nav-text">Calendar</span>
         </li>
+        </Link>
+        <Link className="a" to="/Search">
         <li className="nav-divider-item">
           <FaSearch className="nav-icon" />
           <span className="nav-text">Search</span>
         </li>
+        </Link>
         <li className="nav-user-item">
           <FaGear className="nav-icon" />
           <span className="nav-text">Settings</span>
@@ -35,4 +46,4 @@ export default function Navbar(){
       </ul>
     </div>
   );
-};
+}

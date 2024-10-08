@@ -1,0 +1,27 @@
+.mainheader{
+    margin-top: 3%;
+    color: black;
+    font-size: 300%;
+}
+
+.mainsection{
+    margin-top: 9%;
+    float:left;
+    margin-left: -60%;
+    position: relative;
+    text-align: left;
+    z-index: 1000;
+
+}
+
+.quickstart{
+    margin-top: 0%;
+    color: darkgreen;
+    font-size: 200%;
+}
+
+.subquick{
+    margin-top: 0%;
+}
+
+p{margin-left: 0%;}
