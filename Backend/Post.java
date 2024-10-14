@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 
 public class Post {
      /*
@@ -9,26 +10,21 @@ public class Post {
       *
       * Posts must also organize and maintain a list of all their comments.
       *  */
-    ArrayList<String> tags;
-    ArrayList<Comment> comments;
-    Date eventTime;
+    private int postId;
+    private int ownerId;
+    private ArrayList<String> tags;
+    //private ArrayList<Comment> comments;
+    private Date eventTime, timePosted, timeModified;
 
-    int likes;
-    int commentCount;
+    private int likes, commentCount;
 
-    boolean postVisible;
-    boolean commentsVisible;
-    boolean restrictComments;
-    boolean userliked; // MAKE IT A SET OF USER ID's WHO LIKED IT SO WE CAN BE SPEEDY
+    private boolean postVisible, commentsVisible, restrictComments; // MAKE IT A SET OF USER ID's WHO LIKED IT SO WE CAN BE SPEEDY
 
-    String html; // Temp attribute, to figure out how to render the content
+    private String postBodyCode; // HTML code to render the post body
 
-    public Post(){
+    public Post(int postId){
         /*
-        * Delete this comment once you've figured out what is being passed into the post
-        *
-        * -> 1) Are we passing in a string? -> vs are we passing in the tags, content, date etc.
-        *
+        * Load in the post using database
         */
         this.tags = new ArrayList<String>();
         this.comments = new ArrayList<Comment>();
@@ -41,26 +37,16 @@ public class Post {
         this.postVisible = false;
     }
 
-    public void likePost(){
+    public void likePost(int userId){
         /*
-        * Increment the likes, if the user has not yet done so
+        * Query database to check if user like the post
+        * If not, increment like counter and write into database
         */
-        if (!this.userliked){
-            this.likes += 1;
-            this.userliked = true;
-        }
     }
 
     public void editPost(){
         /*
         * Use the same parameters for the Post, to change properties for the post i.e. the date / time
-        */
-        // TODO
-    }
-
-    public void render(){
-        /*
-        * Render the Post, figure out how to do it
         */
         // TODO
     }
@@ -73,11 +59,20 @@ public class Post {
         this.restrictComments = b;
     }
 
+    /*
     public void addComment(String s){
         /*
         * Add a given comment to this list of comments under the post
-        */
+        
         this.comments.add(new Comment(s));
         this.commentCount += 1;
+    }*/
+
+    /**
+     * Returns a list of first numComment comments for this post, sorted newest first
+     */
+    public List<Comment> getComments(int numComments) {
+        // TODO: Just query the database
+        return null;
     }
 }
