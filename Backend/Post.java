@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 
 public class Post {
      /*
@@ -13,7 +14,7 @@ public class Post {
     private int postId;
     private int ownerId;
     private ArrayList<String> tags;
-    //private ArrayList<Comment> comments;
+    private ArrayList<Comment> comments;
     private Date eventTime, timePosted, timeModified;
 
     private int likes, commentCount;

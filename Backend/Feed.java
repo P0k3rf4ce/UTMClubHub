@@ -15,6 +15,7 @@ public class Feed {
         /* Hide all the posts that have the not wanted tags
         * TODO: Change it to a set to make searching it faster
         */
+        /**
         for (String tag : tags) {
             for (Post post : posts) {
                 if (post.tags.contains(tag)) {
@@ -22,12 +23,14 @@ public class Feed {
                 }
             }
         }
+         */
     }
 
     public void showPosts(ArrayList<String> tags){
         /* Show all the posts that have the not wanted tags
          * TODO: Change it to a set to make searching it faster
          */
+        /**
         for (String tag : tags) {
             for (Post post : posts) {
                 if (post.tags.contains(tag)) {
@@ -35,6 +38,7 @@ public class Feed {
                 }
             }
         }
+         */
     }
 
     public void addPost(Post x){

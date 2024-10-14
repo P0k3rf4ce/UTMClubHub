@@ -1,6 +1,6 @@
 public class Comment {
     /*
-    * This is a class which models a individual comment object which is to be displayed on the user's feed.
+    * This is a class which models an individual comment object which is to be displayed on the user's feed.
     *
     * Important: The comment is not a stand-alone object, rather it will always be attached to a post
     *
@@ -27,7 +27,7 @@ public class Comment {
          * This is the function to edit a comment, and change it to a new comment
          * */
         this.editCount += 1;
-        this.history = " EDIT: " + this.editCount + this.display; // Very simple log to log all edits
+        this.history = " EDIT " + (this.editCount - 1) + ":" + this.display; // Very simple log to log all edits
         this.display = newComment;
         this.moderated = false;
         this.isVisible = false;
@@ -49,3 +49,5 @@ public class Comment {
         this.isVisible = true; // temp placeholder to make it visible
     }
 }
+
+
