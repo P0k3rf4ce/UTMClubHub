@@ -11,17 +11,17 @@ public class Post {
       *
       * Posts must also organize and maintain a list of all their comments.
       *  */
-    private int postId;
-    private int ownerId;
-    private ArrayList<String> tags;
-    private ArrayList<Comment> comments;
-    private Date eventTime, timePosted, timeModified;
+    protected int postId;
+    protected int ownerId;
+    protected ArrayList<String> tags;
+    protected ArrayList<Comment> comments;
+    protected Date eventTime, timePosted, timeModified;
 
-    private int likes, commentCount;
+    protected int likes, commentCount;
 
-    private boolean postVisible, commentsVisible, restrictComments; // MAKE IT A SET OF USER ID's WHO LIKED IT SO WE CAN BE SPEEDY
+    protected boolean postVisible, commentsVisible, restrictComments; // MAKE IT A SET OF USER ID's WHO LIKED IT SO WE CAN BE SPEEDY
 
-    private String postBodyCode; // HTML code to render the post body
+    protected String postBodyCode; // HTML code to render the post body
 
     public Post(int postId){
         /*
