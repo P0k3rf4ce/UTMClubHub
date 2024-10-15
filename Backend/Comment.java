@@ -69,6 +69,7 @@ public class Comment {
     }
 
     // Getters and setters can be added as needed for accessing or modifying the comment’s fields.
+    // PLEASE ADD SOME BEFORE MAKING THE ATTRIBUTES PRIVATE
 }
 
 
