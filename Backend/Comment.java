@@ -1,53 +1,75 @@
+/**
+ * The Comment class represents a user-generated comment attached to a post within the feed.
+ * Each comment is not standalone but is always linked to a post. Comments are subject to
+ * moderation, and their visibility can be controlled by both the original poster and
+ * platform moderators.
+ */
 public class Comment {
-    /*
-    * This is a class which models an individual comment object which is to be displayed on the user's feed.
-    *
-    * Important: The comment is not a stand-alone object, rather it will always be attached to a post
-    *
-    * Sidenote: for various reasons not all comments will be visible, as they can be moderated
-    * They can be hidden by the original poster or an official moderation member
-    * */
-    String display; // The string to display for the comment
-    String history; // For moderation logs
-    int editCount; // Keep track of the edits on a given comment
-    boolean moderated; // If this comment has passed a moderation check
-    boolean isVisible; // If this comment is allowed to be allowed under a post
 
-    public Comment(String comment){
-        this.history = "";
-        this.editCount = 0;
-        this.display = comment;
-        this.moderated = false; // Make sure that the moderation is set to false, until it gets moderated
-        this.isVisible = false; // Make suer that the post remains not visible until it gets moderated,
-                                // yet can be hidden by the poster
+    /** The text content of the comment to be displayed on the feed. */
+    private String display;
+
+    /** A log that tracks all previous versions of the comment for moderation and auditing purposes. */
+    private String history;
+
+    /** Counter to track the number of edits made to the comment. */
+    private int editCount;
+
+    /** Indicates whether the comment has passed moderation checks. */
+    private boolean moderated;
+
+    /** Indicates whether the comment is visible to users after moderation or other actions. */
+    private boolean isVisible;
+
+    /**
+     * Constructs a new Comment with the given content. Upon creation, the comment is
+     * neither moderated nor visible until it undergoes the moderation process.
+     *
+     * @param comment The initial content of the comment.
+     */
+    public Comment(String comment) {
+        this.history = "";       // Initialize history as an empty string.
+        this.editCount = 0;      // Initialize edit count to zero.
+        this.display = comment;  // Set the initial comment text.
+        this.moderated = false;  // Comments are unmoderated by default upon creation.
+        this.isVisible = false;  // Comments are hidden by default until approved by moderation.
     }
 
-    public void editComment(String newComment){
-        /*
-         * This is the function to edit a comment, and change it to a new comment
-         * */
-        this.editCount += 1;
-        this.history = " EDIT " + (this.editCount - 1) + ":" + this.display; // Very simple log to log all edits
-        this.display = newComment;
-        this.moderated = false;
-        this.isVisible = false;
+    /**
+     * Edits the current comment content. Each edit increments the edit count,
+     * appends the previous version of the comment to the history log, and resets
+     * the moderation and visibility states.
+     *
+     * @param newComment The updated comment content.
+     */
+    public void editComment(String newComment) {
+        this.editCount += 1; // Increment edit count for each edit.
+        this.history = " EDIT " + (this.editCount - 1) + ": " + this.display; // Append old comment to history.
+        this.display = newComment; // Update the comment content.
+        this.moderated = false;    // Reset moderation state after an edit.
+        this.isVisible = false;    // Reset visibility until re-moderation.
     }
 
-    public void Moderate(){
-        /*
-         * Use the database to moderate the above comment, use the banned word list to determine if the comment is
-         * post-able, or not.
-         */
-        this.moderated = true; // Just as default case for now, make it a conditional later once blacklist is set up
+    /**
+     * Marks the comment as having passed moderation. This is a placeholder method for
+     * future development where a moderation system will determine if the comment is
+     * suitable for posting based on content policies (e.g., banned words, community guidelines).
+     */
+    public void Moderate() {
+        this.moderated = true; // Temporarily set to true, will include conditional checks in future.
     }
 
-    public void render(){
-        // This method is a temporary placeholder for now
-        // Maybe it should return a string or html object?
-        // Perhaps this is the case
-        // Tbd later
-        this.isVisible = true; // temp placeholder to make it visible
+    /**
+     * Temporarily makes the comment visible by setting the visibility flag to true. In future
+     * iterations, this method could return a formatted string or HTML object representing the
+     * comment for the front-end to render in the UI.
+     */
+    public void render() {
+        this.isVisible = true; // Set visibility to true.
     }
+
+    // Getters and setters can be added as needed for accessing or modifying the comment’s fields.
 }
+
 
 
