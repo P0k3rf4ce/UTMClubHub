@@ -32,7 +32,7 @@ public class CommentTest {
         comment2.editComment("My name is burger king plane guy!");
 
         assertEquals(comment2.editCount, 1); // Ensure edit count got updated
-        assertEquals(comment2.history, " EDIT 0:Hello there! My name is Walter White!"); // Ensure history logged
+        assertEquals(comment2.history, " EDIT 0: Hello there! My name is Walter White!"); // Ensure history logged
         assertEquals(comment2.isVisible, false);
         assertEquals(comment2.moderated, false);
         assertEquals(comment2.display, "My name is burger king plane guy!");

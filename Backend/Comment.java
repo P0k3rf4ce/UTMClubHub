@@ -7,19 +7,19 @@
 public class Comment {
 
     /** The text content of the comment to be displayed on the feed. */
-    private String display;
+    protected String display;
 
     /** A log that tracks all previous versions of the comment for moderation and auditing purposes. */
-    private String history;
+    protected String history;
 
     /** Counter to track the number of edits made to the comment. */
-    private int editCount;
+    protected int editCount;
 
     /** Indicates whether the comment has passed moderation checks. */
-    private boolean moderated;
+    protected boolean moderated;
 
     /** Indicates whether the comment is visible to users after moderation or other actions. */
-    private boolean isVisible;
+    protected boolean isVisible;
 
     /**
      * Constructs a new Comment with the given content. Upon creation, the comment is
