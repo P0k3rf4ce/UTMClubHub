@@ -39,10 +39,12 @@ export default function Navbar() {
           <FaGear className="nav-icon" />
           <span className="nav-text">Settings</span>
         </li>
+        <Link className="a" to="/Login">
         <li className="nav-user-item">
           <FaUser className="nav-icon" />
           <span className="nav-text">Account</span>
         </li>
+        </Link>
       </ul>
     </div>
   );

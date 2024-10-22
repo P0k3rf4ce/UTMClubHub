@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full height */
+    padding: 40px; /* Added more padding */
+  }
+  
+  .searchbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take up full width of the container */
+    max-width: 1000px; /* Increased max-width for better spacing */
+    margin-bottom: 30px; /* More space below the form */
+    padding: 20px; /* Padding inside the form area */
+    background-color: #f8f9fa; /* Optional: Light background color for better visibility */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a raised look */
+  }
+  
+  .inputbox {
+    width: 100%; /* Ensure the input fields take up full width */
+    padding: 15px; /* Larger padding for bigger input fields */
+    margin: 15px 0; /* Increased margin for more space between fields */
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Larger font size for better readability */
+  }
+  
+  button {
+    width: 50%; /* Make button full width */
+    padding: 15px; /* Larger padding for a more substantial button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font for the button */
+  }
+
+  .button-password {
+    width: 100%; /* Smaller width compared to the primary button */
+    padding: 20px; /* Slightly smaller padding */
+    background-color: #6c757d; /* Different background color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly smaller font */
+}
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .item {
+    margin-bottom: 15px; /* More space between labels and inputs */
+  }
+  
+  .yap {
+    font-weight: bold;
+    margin-bottom: 10px; /* Added space below label */
+    display: block;
+    font-size: 16px; /* Larger font for labels */
+  }
+  

@@ -10,6 +10,7 @@ import Home from "./User Interface/Home";
 import SearchPage from "./User Interface/SearchPage";
 import Explore from "./User Interface/Explore"
 import CalendarPage from "./User Interface/CalendarPage";
+import Login from "./User Interface/Login";
 
 export default function App() {
   // Use the correct syntax for declaring and using state
@@ -54,6 +55,7 @@ export default function App() {
         <Route path='/Search' element={<SearchPage></SearchPage>}></Route>
         <Route path='/Explore' element={<Explore></Explore>}></Route>
         <Route path="/Calendar" element={<CalendarPage></CalendarPage>}></Route>
+        <Route path="/Login" element={<Login></Login>}></Route>
       </Routes>
     </HashRouter>
   )
