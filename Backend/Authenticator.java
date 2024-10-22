@@ -1,3 +1,7 @@
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+
 public class Authenticator {
     private static String bytesToHex(byte[] hash) {
         StringBuilder hexString = new StringBuilder(2 * hash.length);
@@ -12,6 +16,10 @@ public class Authenticator {
     }
 
     private static String generateSalt() {
+        SecureRandom rand = new SecureRandom();
+        byte[] salt = new byte[16];
+        rand.nextBytes(salt);
 
+        return new String(salt, StandardCharsets.UTF_8);
     }
 }
