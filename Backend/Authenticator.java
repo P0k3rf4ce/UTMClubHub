@@ -1,4 +1,6 @@
 import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -88,7 +90,15 @@ public class Authenticator {
      * @return The hashed password as a hexadecimal string.
      */
     private String hashPassword(String password, String salt) {
-        // Implement password hashing logic here (using SHA-256).
-        return ""; // Replace with actual implementation
+        MessageDigest digest = null;
+        try {
+            digest = MessageDigest.getInstance("SHA-256");
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+        String saltedPassword = password + salt;
+        byte[] encodedhash = digest.digest(saltedPassword.getBytes(StandardCharsets.UTF_8));
+        
+        return bytesToHex(encodedhash); // Replace with actual implementation
     }
 }
